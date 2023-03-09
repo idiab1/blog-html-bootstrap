@@ -1,0 +1,29 @@
+// Navbar
+.navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: transparent;
+
+    // Navbar brand
+    .navbar-brand {
+        color: $dark-color;
+    }
+
+    // Navbar nav
+    .navbar-nav {
+        // navbar link 
+        .nav-link
+        {
+            font-weight: 500;
+            &.active{
+                color: rgb(1 31 49 / 90%);
+            }
+        }
+        .show > .nav-link {
+            color: rgb(1 31 49 / 90%);
+        }
+    }
+    
+}
+// End of Navbar
