@@ -1,3 +1,39 @@
+.btn-search {
+  color: #011f31;
+  border: 2px solid #011f31;
+  border-radius: 20px;
+  transition: all 0.075s ease-in;
+}
+.btn-search:hover {
+  color: #A3DA8D;
+  border-color: #146356;
+  background-color: #146356;
+}
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: transparent;
+}
+.navbar .navbar-brand {
+  color: #011f31;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: rgba(1, 31, 49, 0.9);
+}
+.navbar .navbar-nav .show > .nav-link {
+  color: rgba(1, 31, 49, 0.9);
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(347deg, rgba(20, 99, 86, 0.61), rgba(163, 218, 141, 0.66)), url("../../../images/bg.jpg") center center no-repeat;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=main.css.map */
