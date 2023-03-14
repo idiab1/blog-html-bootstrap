@@ -11,3 +11,15 @@
     }
 }
 // End of Button Search
+
+// Btn tags
+.btn-tag {
+    font-weight: 500;
+    color: #fefffd;
+    border-radius: 20px;
+    padding: .275rem .65rem;
+    background-color: $dark-green;
+    &:hover{
+        color: $mint-green;
+    }
+}
