@@ -21,13 +21,16 @@
         }
         p{
             margin-bottom: 0;
-            color: #000;
+            color: $gray-color;
         }
     }
     .card-footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: transparent;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
         .user {
             display: flex;
             align-items: center;        
@@ -42,8 +45,61 @@
             // User name
             .user-name {
                 font-weight: 600;
+                color: $dark-green;
             }
         }
     }
 }
 // End of Article card
+
+// User Card
+.card.user-info {
+    .card-header {
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-green;
+        // User Image
+        .user-image {
+            border-radius: 50%;
+            width: 110px;
+            border: 2px solid $mint-green;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .card-body {
+        h4 {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        p {
+            margin-bottom: 0.5rem;
+            color: $gray-color;
+        }
+
+        ul {
+            margin: 0;
+            padding-top: 10px;
+            li {
+                display: inline-block;
+                &:nth-child(2) {
+                    padding: 0 10px;
+                }
+
+                a {
+                    color: $dark-color;
+                    transition: all .25s ease-in;
+                    &:hover {
+                        color: $dark-green;
+                    }
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
