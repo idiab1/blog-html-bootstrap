@@ -1,0 +1,49 @@
+// Article card
+.card.article {
+    .card-header{
+        position: relative;
+        padding: 0;
+        aspect-ratio: 9/6;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card-body{
+        h3 {
+            font-size: 1.55rem;
+            font-weight: 600;
+            a {
+                text-decoration: none;
+                color: $dark-color;
+            }
+        }
+        p{
+            margin-bottom: 0;
+            color: #000;
+        }
+    }
+    .card-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .user {
+            display: flex;
+            align-items: center;        
+            // User Image
+            .user-image {
+                width: 35px;
+                border-radius: 50%;
+                border: 1px solid $dark-green;
+                margin-right: 5px;
+            }
+
+            // User name
+            .user-name {
+                font-weight: 600;
+            }
+        }
+    }
+}
+// End of Article card
