@@ -5,11 +5,20 @@
     border-radius: 20px;
     transition: all .075s ease-in;
     &:hover{
-        color: $mint-green;
+        color: $dark-color;
         border-color: $dark-green;
         background-color: $dark-green;
     }
 }
+.scrolled {
+    .btn-search{
+        color: $dark-color;
+        border-color: $dark-green;
+        background-color: $dark-green;
+        
+    }
+}
+
 // End of Button Search
 
 // Btn tags
@@ -20,6 +29,6 @@
     padding: .275rem .65rem;
     background-color: $dark-green;
     &:hover{
-        color: $mint-green;
+        color: $dark-color;
     }
 }
