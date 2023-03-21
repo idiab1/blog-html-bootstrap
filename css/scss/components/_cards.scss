@@ -23,6 +23,11 @@
         p{
             margin-bottom: 0;
             color: $gray-color;
+            width: 355px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
         }
     }
     .card-footer{
@@ -39,14 +44,14 @@
             .user-image {
                 width: 35px;
                 border-radius: 50%;
-                border: 1px solid $dark-green;
+                border: 1px solid $dark-color;
                 margin-right: 5px;
             }
 
             // User name
             .user-name {
                 font-weight: 600;
-                color: $dark-green;
+                color: $dark-color;
             }
         }
     }
