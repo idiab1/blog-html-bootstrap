@@ -18,7 +18,7 @@
         <!-- Container fluid -->
         <div class="container-fluid">
             <!-- Navbar Brand -->
-            <a class="navbar-brand fw-bold" href="#">Navbar</a>
+            <a class="navbar-brand fw-bold" href="./index.html">IsBlog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,7 +28,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <!-- Home -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <!-- Categories -->
                     <li class="nav-item dropdown">
@@ -37,10 +37,11 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categories">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="./pages/computer_science.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="./pages/web_developement.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./pages/backend_developement.html">Backend Development</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="./pages/all_articles.html">All Articles</a></li>
                         </ul>
                     </li>
                     <!-- Tags -->
@@ -48,9 +49,9 @@
                         <a class="nav-link" href="#">Tags</a>
                     </li>
 
-                    <!-- Contact Me -->
+                    <!-- Contact Us -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact me</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 <!-- ./Navbar -->
@@ -194,12 +195,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -227,81 +230,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
-                                </div>
-
-                                <!-- Card footer -->
-                                <div class="card-footer">
-                                    <div class="user">
-                                        <div class="user-image">
-                                            <img src="./images/default.png" class="rounded-circle img-fluid" alt="user image">
-                                        </div>
-                                        <div class="user-name">
-                                            <span>John Smith</span>
-                                        </div>
-                                    </div>
-                                    <!-- Liked -->
-                                    <div class="liked">
-                                        <i class="fas fa-thumbs-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ./Article -->
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm">
-                            <!-- Article -->
-                            <div class="card article">
-                                <!-- Card Header -->
-                                <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
-                                </div>
-
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
-                                </div>
-
-                                <!-- Card footer -->
-                                <div class="card-footer">
-                                    <div class="user">
-                                        <div class="user-image">
-                                            <img src="./images/default.png" class="rounded-circle img-fluid" alt="user image">
-                                        </div>
-                                        <div class="user-name">
-                                            <span>John Smith</span>
-                                        </div>
-                                    </div>
-                                    <!-- Liked -->
-                                    <div class="liked">
-                                        <i class="fas fa-thumbs-up"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ./Article -->
-                        </div>
-                        <div class="col-sm">
-                            <!-- Article -->
-                            <div class="card article">
-                                <!-- Card Header -->
-                                <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
-                                </div>
-
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -332,12 +268,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -365,12 +303,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -401,12 +341,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -434,12 +376,14 @@
                             <div class="card article">
                                 <!-- Card Header -->
                                 <div class="card-header">
-                                    <img src="./images/bg.jpg" alt="article image">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
                                 </div>
 
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                         Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
                                 </div>
@@ -461,6 +405,85 @@
                                 </div>
                             </div>
                             <!-- ./Article -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="./images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <a href="./pages/article_details.html">
+                                        <img src="./images/bg.jpg" alt="article image">
+                                    </a>
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="./pages/article_details.html">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="./images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a class="btn btn-show-more" href="./pages/all_articles.html">Show More</a>
                         </div>
                     </div>
                 </div>
@@ -492,12 +515,40 @@
                 </div>
             </div>
             <!-- ./Row -->
+            
         </div>
     </section>
+    <!-- ./Articles -->
 
-    <!-- Articles -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-10">
+                    <div class="copyright">
+                        <p class="m-0">&copy; Copyrights all reserved. | By <a href="">Islam Diab</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-2 text-end">
+                    <!-- Footer links -->
+                    <div class="footer-links">
+                        <ul class="list-unstyled m-0">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- ./Footer links -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
 
     <!-- Bootstrap js -->
-      <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
