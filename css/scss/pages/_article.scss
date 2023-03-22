@@ -1,0 +1,47 @@
+// Article Details
+.article-details-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    // Article header
+    .article-header {
+        // Details
+        .details {
+            p {
+                color: $gray-color;
+                a{
+                    color: $dark-green;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+    // Article Body
+    .article-body {
+        .description {
+            color: $gray-color;
+            margin-bottom: 0;
+            line-height: 1.67;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+    // article tags
+    .article-tags {
+        ul {
+            li {
+                display: inline-block;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+// Popular Articles
+.popular-articles {
+    .card.article .card-body p {
+        width: 300px;
+    }
+}
