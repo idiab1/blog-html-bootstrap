@@ -22,3 +22,24 @@
         background-color: $dark-green;
     }
 }
+
+// Article header
+.article-header {
+    // Heading
+    .heading {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        position: relative;
+        &::after{
+            width: 170px;
+            height: 4px;
+            left: calc((100% / 2) - 85px);
+        }
+        &::before{
+            width: 120px;
+            height: 4px;
+            left: calc((100% / 2) - 60px);
+        }
+    }
+}
