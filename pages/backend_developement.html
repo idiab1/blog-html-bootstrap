@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../libs/fontawesome/css/all.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Main style -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Container fluid -->
+        <div class="container-fluid">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand fw-bold" href="../index.html">IsBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <!-- Categories -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categories" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categories">
+                            <li><a class="dropdown-item" href="../pages/computer_science.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="../pages/web_developement.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="../pages/backend_developement.html">Backend Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                    <!-- Tags -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tags.html">Tags</a>
+                    </li>
+                </ul>
+                <!-- ./Navbar -->
+                <div class="d-flex">
+                    <div class="btn btn-outline-success btn-search">
+                        <i class="fab fa-searchengin"></i>
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./container-fluid -->
+    </nav>
+    <!-- ./Navbar -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid"></div>
+    </header>
+    <!-- ./Header -->
+
+    <!-- Most Popular Tags -->
+    <div class="popular-tags">
+        <div class="container-fluid">
+            
+            <!-- Carousel tags -->
+            <div id="carouselTags" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- carousel-item -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Java</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Test-Driven Development</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Laravel</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#API</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./carousel-item -->
+
+                    <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#JavaScript</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#PHP</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Symfony</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Domain-Driven Development</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./carousel-item -->
+
+                    <!-- carousel-item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Computer Vision</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#C</a>
+                                </div>
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Tag -->
+                                <div class="tag">
+                                    <a class="btn btn-tag" href="">#Python</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- ./carousel-item -->
+                </div>
+                <!-- ./carousel-inner -->
+            </div>
+            <!-- ./Carousel tags -->
+        </div>
+    </div>
+    <!-- ./Most Popular Tags -->
+
+    <!-- Articles -->
+    <section class="articles-section section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 mx-auto">
+                    <!-- Articles section header -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="articles-header section-header">
+                                <h2 class="heading">Backend Development</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of Articles section header -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- Article -->
+                            <div class="card article">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <img src="../images/bg.jpg" alt="article image">
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <h3 class="article-heading"><a href="">Article Heading</a></h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptas facilis libero magni quos suscipit accusamus, iusto nesciunt non quae itaque!</p>
+                                </div>
+
+                                <!-- Card footer -->
+                                <div class="card-footer">
+                                    <div class="user">
+                                        <div class="user-image">
+                                            <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                        </div>
+                                        <div class="user-name">
+                                            <span>John Smith</span>
+                                        </div>
+                                    </div>
+                                    <!-- Liked -->
+                                    <div class="liked">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Article -->
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- sidebar & card user information -->
+                <div class="col-md-3 d-none d-md-block">
+                    <!-- User info -->
+                    <div class="card user-info">
+                        <!-- Card header -->
+                        <div class="card-header">
+                            <!-- User image -->
+                            <div class="user-image">
+                                <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                            </div>
+                        </div>
+
+                        <!-- Card body -->
+                        <div class="card-body text-center">
+                            <h4>John Smith</h4>
+                            <p>john@example.come</p>
+                            <ul class="list-unstyled">
+                                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of User info -->
+                </div>
+            </div>
+            <!-- ./Row -->
+            
+        </div>
+    </section>
+    <!-- ./Articles -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8">
+                    <div class="copyright">
+                        <p class="m-0">&copy; Copyrights all reserved. | By <a href="">Islam Diab</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <!-- Footer links -->
+                    <div class="footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- ./Footer links -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- Bootstrap js -->
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
