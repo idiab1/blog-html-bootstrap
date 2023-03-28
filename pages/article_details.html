@@ -46,7 +46,7 @@
                     </li>
                     <!-- Tags -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tags</a>
+                        <a class="nav-link" href="../pages/tags.html">Tags</a>
                     </li>
 
                     <!-- Contact Us -->
@@ -67,80 +67,180 @@
     </nav>
     <!-- ./Navbar -->
 
-    <!-- Articles -->
-    <section class="article-details-section section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 mx-auto">
-                    <!-- Articles section header -->
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <!-- Article header -->
-                            <div class="article-header section-header">
-                                <h2 class="heading">Article Heading</h2>
-                                <!-- Details -->
-                                <div class="details py-3">
-                                    <p>By <a href="">John Smith</a> - <span class="date-published">12 June, 2022</span></p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Articles -->
+        <section class="article-details-section section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 mx-auto">
+                        <!-- Articles section header -->
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <!-- Article header -->
+                                <div class="article-header section-header">
+                                    <h2 class="heading">Article Heading</h2>
+                                    <!-- Details -->
+                                    <div class="details py-3">
+                                        <p>By <a href="">John Smith</a> - <span class="date-published">12 June, 2022</span></p>
+                                    </div>
+                                </div>
+                                <!-- Article body -->
+                                <div class="article-body">
+                                    <!-- Article image -->
+                                    <div class="article-image">
+                                        <img class="img-fluid img-thumbnail" src="../images/bg.jpg" alt="article image">
+                                    </div>
+                                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Amet non velit soluta, sit quasi laboriosam, esse odio dolor tempora facilis cupiditate, 
+                                        quisquam ipsum tenetur magnam! Provident pariatur cupiditate esse doloribus, 
+                                        soluta vero numquam atque hic temporibus laudantium necessitatibus porro quod 
+                                        commodi quaerat molestias sed cumque iste? Ad fugit velit ipsam reprehenderit consequatur, 
+                                        exercitationem, quibusdam blanditiis minima quasi fuga recusandae iste dolorum minus, 
+                                        sapiente debitis expedita esse amet rem distinctio illo placeat eum suscipit magnam asperiores.</p>
+                                        <!-- Article Tags -->
+                                        <div class="article-tags pb-5">
+                                            <ul class="list-unstyled m-0">
+                                                <li><a class="btn btn-tag" href="">#Java</a></li>
+                                                <li><a class="btn btn-tag" href="">#API</a></li>
+                                                <li><a class="btn btn-tag" href="">#Docker</a></li>
+                                                <li><a class="btn btn-tag" href="">#Web Developement</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Comments -->
+                                        <div class="comments">
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <!-- Article header -->
+                                                    <div class="section-header">
+                                                        <h5 class="heading position-relative">
+                                                            Comments 
+                                                            <span class="position-absolute top-0 start-25 translate-middle badge rounded-pill bg-danger">
+                                                                2+
+                                                                <span class="visually-hidden">unread messages</span>
+                                                            </span>
+                                                        </h5>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- All comments -->
+                                            <div class="all-comments text-start">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <!-- Comment -->
+                                                        <div class="comment mb-4">
+                                                            <!-- User -->
+                                                            <div class="user">
+                                                                <!-- User image -->
+                                                                <div class="user-image">
+                                                                    <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                                                </div>
+                                                                <!-- User name -->
+                                                                <div class="user-name">
+                                                                    <h5>John Smith <span>12 June, 2022</span></h5>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Comment desc -->
+                                                            <div class="comment-desc">
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit labore magnam 
+                                                                    officiis, saepe distinctio animi?</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ./Comment -->
+                                                        <!-- Comment -->
+                                                        <div class="comment mb-4">
+                                                            <!-- User -->
+                                                            <div class="user">
+                                                                <!-- User image -->
+                                                                <div class="user-image">
+                                                                    <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                                                </div>
+                                                                <!-- User name -->
+                                                                <div class="user-name">
+                                                                    <h5>John Smith <span>12 June, 2022</span></h5>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Comment desc -->
+                                                            <div class="comment-desc">
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit labore magnam 
+                                                                    officiis, saepe distinctio animi?</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ./Comment -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- comments form -->
+                                            <div class="comments-form">
+                                                <!-- Form -->
+                                                <form action="" method="POST">
+                                                    <div class="row mb-4">
+                                                        <div class="col">
+                                                            <!-- Name -->
+                                                            <div class="form-group">
+                                                                <input class="form-control" type="text" placeholder="Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <!-- Email -->
+                                                            <div class="form-group">
+                                                                <input class="form-control" type="email" placeholder="E-mail">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Comment -->
+                                                    <div class="form-group mb-3">
+                                                        <textarea class="form-control" placeholder="Write your comment"></textarea>
+                                                    </div>
+                                                    
+                                                    <!-- Send -->
+                                                    <div class="form-group mb-3">
+                                                        <button type="submit" class="btn btn-colored btn-send">Send</button>
+                                                    </div>
+                                                </form>
+                                                <!-- End of Form -->
+                                            </div>
+                                            <!-- ./comments form -->
+                                        </div>
                                 </div>
                             </div>
-                            <!-- Article body -->
-                            <div class="article-body">
-                                <!-- Article image -->
-                                <div class="article-image">
-                                    <img class="img-fluid img-thumbnail" src="../images/bg.jpg" alt="article image">
+                        </div>
+                        <!-- end of Articles section header -->
+                    </div>
+    
+                    <!-- sidebar & card user information -->
+                    <div class="col-md-3 d-none d-md-block">
+                        <!-- User info -->
+                        <div class="card user-info">
+                            <!-- Card header -->
+                            <div class="card-header">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
                                 </div>
-                                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Amet non velit soluta, sit quasi laboriosam, esse odio dolor tempora facilis cupiditate, 
-                                    quisquam ipsum tenetur magnam! Provident pariatur cupiditate esse doloribus, 
-                                    soluta vero numquam atque hic temporibus laudantium necessitatibus porro quod 
-                                    commodi quaerat molestias sed cumque iste? Ad fugit velit ipsam reprehenderit consequatur, 
-                                    exercitationem, quibusdam blanditiis minima quasi fuga recusandae iste dolorum minus, 
-                                    sapiente debitis expedita esse amet rem distinctio illo placeat eum suscipit magnam asperiores.</p>
                             </div>
-                            <!-- Article Tags -->
-                            <div class="article-tags">
+    
+                            <!-- Card body -->
+                            <div class="card-body text-center">
+                                <h4>John Smith</h4>
+                                <p>john@example.come</p>
                                 <ul class="list-unstyled">
-                                    <li><a class="btn btn-tag" href="">#Java</a></li>
-                                    <li><a class="btn btn-tag" href="">#API</a></li>
-                                    <li><a class="btn btn-tag" href="">#Docker</a></li>
-                                    <li><a class="btn btn-tag" href="">#Web Developement</a></li>
+                                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fab fa-github-square"></i></a></li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- end of User info -->
                     </div>
-                    <!-- end of Articles section header -->
                 </div>
-
-                <!-- sidebar & card user information -->
-                <div class="col-md-3 d-none d-md-block">
-                    <!-- User info -->
-                    <div class="card user-info">
-                        <!-- Card header -->
-                        <div class="card-header">
-                            <!-- User image -->
-                            <div class="user-image">
-                                <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
-                            </div>
-                        </div>
-
-                        <!-- Card body -->
-                        <div class="card-body text-center">
-                            <h4>John Smith</h4>
-                            <p>john@example.come</p>
-                            <ul class="list-unstyled">
-                                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fab fa-github-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of User info -->
-                </div>
+                <!-- ./Row -->
             </div>
-            <!-- ./Row -->
-        </div>
-    </section>
-    <!-- ./Articles -->
+        </section>
+        <!-- ./Articles -->
+    </main>
+    <!-- ./Main Content -->
 
     <!-- popular articles -->
     <section class="popular-articles section">
