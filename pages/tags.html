@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../libs/fontawesome/css/all.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Main style -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Container fluid -->
+        <div class="container-fluid">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand fw-bold" href="../index.html">IsBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <!-- Categories -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categories" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categories">
+                            <li><a class="dropdown-item" href="../pages/computer_science.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="../pages/web_developement.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="../pages/backend_developement.html">Backend Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../pages/all_articles.html">All Articles</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tags -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tags.html">Tags</a>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- ./Navbar -->
+                <div class="d-flex">
+                    <div class="btn btn-outline-success btn-search">
+                        <i class="fab fa-searchengin"></i>
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./container-fluid -->
+    </nav>
+    <!-- ./Navbar -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tags -->
+        <section class="tags-section section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 mx-auto">
+                        <!-- tags section header -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tags-header section-header text-center">
+                                    <h2 class="heading">All Tags</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of tags section header -->
+                        <div class="tags text-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-unstyled">
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Java</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Test-Driven Development</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Laravel</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#API</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#JavaScript</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#PHP</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Symfony</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Domain-Driven Development</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Computer Vision</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#C</a>
+                                        </li>
+                                        <!-- Tag -->
+                                        <li class="tag mb-3">
+                                            <a class="btn btn-tag" href="">#Python</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                
+                    </div>
+    
+                    <!-- sidebar & card user information -->
+                    <div class="col-md-3 d-none d-md-block">
+                        <!-- User info -->
+                        <div class="card user-info">
+                            <!-- Card header -->
+                            <div class="card-header">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img src="../images/default.png" class="rounded-circle img-fluid" alt="user image">
+                                </div>
+                            </div>
+    
+                            <!-- Card body -->
+                            <div class="card-body text-center">
+                                <h4>John Smith</h4>
+                                <p>john@example.come</p>
+                                <ul class="list-unstyled">
+                                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end of User info -->
+                    </div>
+                </div>
+                <!-- ./Row -->
+                
+            </div>
+        </section>
+        <!-- ./tags-section -->
+    </main>
+    <!-- ./Main Content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-10">
+                    <div class="copyright">
+                        <p class="m-0">&copy; Copyrights all reserved. | By <a href="">Islam Diab</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-2 text-end">
+                    <!-- Footer links -->
+                    <div class="footer-links">
+                        <ul class="list-unstyled m-0">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- ./Footer links -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- Bootstrap js -->
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
