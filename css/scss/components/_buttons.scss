@@ -36,13 +36,20 @@
 
 // show more btn
 .btn-show-more {
+    border-radius: 20px;
+}
+
+.btn-colored {
     font-weight: 500;
     color: #fefffd;
-    border-radius: 20px;
     padding: .275rem .65rem;
     background-color: $dark-green;
     &:hover{
         background-color: $mint-green;
         color: $dark-color;
     }
+}
+// Send btn
+.btn-send {
+    
 }
