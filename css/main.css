@@ -29,13 +29,16 @@
 }
 
 .btn-show-more {
+  border-radius: 20px;
+}
+
+.btn-colored {
   font-weight: 500;
   color: #fefffd;
-  border-radius: 20px;
   padding: 0.275rem 0.65rem;
   background-color: #1e9682;
 }
-.btn-show-more:hover {
+.btn-colored:hover {
   background-color: #A3DA8D;
   color: #011f31;
 }
@@ -161,18 +164,21 @@
   background-color: #1e9682;
 }
 
-.article-header .heading {
+.article-header .heading,
+.tags-header .heading {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.7rem;
   position: relative;
 }
-.article-header .heading::after {
+.article-header .heading::after,
+.tags-header .heading::after {
   width: 170px;
   height: 4px;
   left: calc(50% - 85px);
 }
-.article-header .heading::before {
+.article-header .heading::before,
+.tags-header .heading::before {
   width: 120px;
   height: 4px;
   left: calc(50% - 60px);
@@ -182,6 +188,7 @@
   position: fixed;
   width: 100%;
   left: 0;
+  top: 0;
   background-color: transparent;
   z-index: 1;
   transition: all 0.25s ease-in;
@@ -263,11 +270,12 @@
 }
 .section .section-header {
   padding-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .article-details-section {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
 }
 .article-details-section .article-header .details p {
   color: #585858;
@@ -289,9 +297,68 @@
   display: inline-block;
   padding: 0 5px;
 }
+.article-details-section .comments {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.article-details-section .comments .section-header h5 .badge {
+  padding: 0.25em 0.35em;
+  font-size: 0.55em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.article-details-section .comments .section-header h5 .translate-middle {
+  transform: translate(-30%, -66%) !important;
+}
+.article-details-section .comments .all-comments {
+  margin-bottom: 2rem;
+}
+.article-details-section .comments .all-comments .comment {
+  border-bottom: 1px solid rgba(88, 88, 88, 0.37);
+}
+.article-details-section .comments .all-comments .comment .user {
+  display: flex;
+  align-items: center;
+}
+.article-details-section .comments .all-comments .comment .user .user-image {
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid #011f31;
+  margin-right: 10px;
+}
+.article-details-section .comments .all-comments .comment .user .user-name h5 {
+  font-weight: 500;
+}
+.article-details-section .comments .all-comments .comment .user .user-name h5 span {
+  color: #585858;
+  font-size: 14px;
+  font-weight: 400;
+}
+.article-details-section .comments .all-comments .comment .comment-desc p {
+  color: #585858;
+  padding-left: 2.65rem;
+}
+.article-details-section .comments .comments-form form input {
+  padding: 0.475rem 0.75rem;
+}
+.article-details-section .comments .comments-form form textarea {
+  min-height: 80px;
+  max-height: 100px;
+}
 
 .popular-articles .card.article .card-body p {
   width: 300px;
+}
+
+.tags-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.tags-section .tags ul li {
+  display: inline-block;
+}
+.tags-section .tags ul li:nth-child(even) {
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
