@@ -1,8 +1,12 @@
 // Adjust add scrolled class to navbar
+let navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        document.querySelector('.navbar').classList.add('scrolled');
+        navbar.classList.add('scrolled');
     }else {
-        document.querySelector('.navbar').classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
     }
 })
+
+// Calculate min height to main content
+document.querySelector('.main-content').style.minHeight = window.innerHeight -  (document.querySelector('.footer').clientHeight) + 'px'
