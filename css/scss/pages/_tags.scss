@@ -1,0 +1,16 @@
+// Tags section
+.tags-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    // Tags
+    .tags{
+        ul {
+            li {
+                display: inline-block;
+                &:nth-child(even){
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
