@@ -42,19 +42,45 @@
     .comments {
         padding: 2rem;
         background-color: #f8f9fa;
+        .section-header {
+            h5 {
+                .badge {
+                    padding: .25em .35em;
+                    font-size: .55em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .translate-middle {
+                    transform: translate(-30%,-66%)!important;
+                }
+            }
+        }
         // All comment
         .all-comments {
             margin-bottom: 2rem;
             .comment {
                 border-bottom: 1px solid rgb(88 88 88 / 37%);
-                // User comment
-                .user-comment {
-                    h5 {
-                        font-weight: 500;
-                        span {
-                            color: $gray-color;
-                            font-size: 14px;
-                            font-weight: 400;
+                // User
+                .user {
+                    display: flex;
+                    align-items: center;        
+                    // User Image
+                    .user-image {
+                        width: 35px;
+                        border-radius: 50%;
+                        border: 1px solid $dark-color;
+                        margin-right: 10px;
+                    }
+
+                    // User name
+                    .user-name {
+                        h5 {
+                            font-weight: 500;
+                            span {
+                                color: $gray-color;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
@@ -62,6 +88,7 @@
                 .comment-desc {
                     p {
                         color: $gray-color;
+                        padding-left: 2.65rem;
                     }
                 }
             }
@@ -70,10 +97,11 @@
         .comments-form {
             form {
                 input {
-
+                    padding: .475rem .75rem;
                 }
                 textarea {
-
+                    min-height: 80px;
+                    max-height: 100px;
                 }
             }
         }
