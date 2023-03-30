@@ -41,15 +41,15 @@
 
 .btn-colored {
     font-weight: 500;
-    color: #fefffd;
+    color: #fff;
     padding: .275rem .65rem;
-    background-color: $dark-green;
+    background-color: $green-color;
     &:hover{
         background-color: $mint-green;
         color: $dark-color;
     }
 }
-// Send btn
-.btn-send {
-    
+// login btn
+.btn-login {
+    width: 100%;
 }
