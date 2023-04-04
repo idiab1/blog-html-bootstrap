@@ -51,6 +51,10 @@
                             box-shadow: none;
                         }
                     }
+                    .btn-link {
+                        padding: 0;
+                        color: $dark-color;
+                    }
                 }
             }
         }
