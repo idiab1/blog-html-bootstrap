@@ -502,8 +502,8 @@
     font-size: 1.45rem;
   }
   .popular-articles .card.article .card-body p {
-    width: 575px;
-    -webkit-line-clamp: 1;
+    width: 400px;
+    -webkit-line-clamp: 2;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
