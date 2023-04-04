@@ -109,3 +109,51 @@
         }
     }
 }
+
+// Large devices (up and desktops, 992px)
+@media (max-width: 767.98px) {
+    // Article card
+    .card.article {
+        margin-bottom: 1.5rem;
+        .card-header{
+            padding: 0;
+            aspect-ratio: 9/6;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .card-body{
+            h3 {
+                font-size: 1.55rem;
+                a {
+                    color: $dark-color;
+                }
+            }
+            p{
+                width: 459px;
+                -webkit-line-clamp: 2;
+            }
+        }
+        
+    }
+    // End of Article card
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    // Article card
+    .card.article {
+        margin-bottom: 1.5rem;
+        .card-body{
+            h3 {
+                font-size: 1.37rem;
+            }
+            p{
+                width: 270px;
+                -webkit-line-clamp: 2;
+            }
+        }
+        
+    }
+    // End of Article card
+}
