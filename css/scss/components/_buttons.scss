@@ -53,3 +53,12 @@
 .btn-sign {
     width: 100%;
 }
+
+@media (max-width: 991.98px){
+    .btn-search{
+        color: $dark-color;
+        border-color: $dark-green;
+        background-color: $dark-green;
+        
+    }
+}
