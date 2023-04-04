@@ -1,21 +1,21 @@
-// Login page
+// Sign page
 .sign-section {
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg, rgb(25 135 84 / 30%), rgb(25 135 84 / 30%)), 
     url("../images/loginBG.jpg") no-repeat center center;
     background-size: cover;
-    // Login container
+    // Sign container
     .sign-container {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        // Login content
+        // Sign content
         .sign-content {
             background-color: #dee2e6;
             width: 575px;
-            // Login header
+            // Sign header
             .sign-header{
                 height: 150px;
                 background-color: $green-color;
@@ -32,9 +32,10 @@
                 p {
                     font-size: 17px;
                     line-height: 1.6;
+                    text-transform: capitalize;
                 }
             }
-            // Login form
+            // Sign form
             .sign-form {
                 padding: 1.7rem 1.7rem;
                 form {
@@ -57,4 +58,39 @@
     }
     
 }
-// End of Login page
+// End of Sign page
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+    // Sign page
+    .sign-section {
+        // Sign container
+        .sign-container {
+            // Sign content
+            .sign-content {
+                width: 430px;
+                .sign-header{
+                    height: 100px;
+                    padding: 1rem;
+                    h1 {
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.6;
+                    }
+                }
+                .sign-form {
+                    padding: 1.55rem;
+                    form {
+                        input {
+                            padding: 0.37rem 0.75rem;
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+    }
+}
