@@ -111,6 +111,43 @@
 // Popular Articles
 .popular-articles {
     .card.article .card-body p {
-        width: 300px;
+        width: 250px;
+        -webkit-line-clamp: 2;
     }
+}
+
+// Large devices (up and desktops, 992px)
+@media (max-width: 767.98px) {
+    .popular-articles {
+        .card.article .card-body {
+            h3 {
+                font-size: 1.45rem;
+            }
+            p {
+                width: 575px;
+                -webkit-line-clamp: 1;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    // Article card
+    .popular-articles {
+        .card.article {
+            margin-bottom: 1.5rem;
+            .card-body{
+                h3 {
+                    font-size: 1.37rem;
+                }
+                p{
+                    width: 350px;
+                    -webkit-line-clamp: 2;
+                }
+            }
+            
+        }
+    }
+    // End of Article card
 }
